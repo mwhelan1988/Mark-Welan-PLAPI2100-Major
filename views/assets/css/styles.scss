@@ -1,0 +1,260 @@
+$theme-colors: ("primary": #ff4e00,
+"success": #d86a48,
+"info": #ffffff,
+"danger": #e43732,
+"secondary": #707070,
+"warning": #363636,
+);
+
+@import "../scss/bootstrap.scss";
+
+$container-max-width: (xl: 1440px);
+
+img {
+    max-width: 100%;
+}
+
+body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+@font-face {
+    font-family: gotham;
+    src: url(/views/assets/fonts/gotham-narrow-book.otf);
+}
+
+p {
+    font-family: gotham, Arial, Helvetica, sans-serif;
+}
+
+body {
+    background-color: rgba($color: #7fbe41, $alpha: .05);
+}
+
+// LOGIN PAGE **************************************************
+
+#landingBanner {
+    background-image: url(/views/assets/images/landingpage-background.jpg);
+    background-repeat: no-repeat;
+    background-size: 50% 100%;
+    min-height: 800px;
+}
+
+//Landing Page footer
+
+.footer {
+    font-size: 13px;
+
+    .footer-content {
+        padding-top: 50px;
+    }
+
+    background-color: #363636;
+    a {
+    color: #ffffff;
+    }
+    a:hover {
+        text-decoration: none;
+        color: #d86a48;
+        transition: .4s;
+    }
+
+    ul {
+    list-style-type: none;
+    padding-inline-start: 0px;
+    }
+    li {
+        margin-top: 8px;
+    }
+    .footer-contact {
+        color: #ffffff;
+        font-size: 13px;
+    }
+    .footer-spacing {
+        padding-left: 0;
+    }
+    .newsletter {
+        color: #ffffff;
+    }
+    input.form-control.footer-input {
+        max-width: 150px;
+    }
+
+    .news-btn {
+        background-color: #EF5C35;
+        border-color: #D86A48; 
+        border-radius: 0px 5px 5px 0px;
+    }
+    .news-btn:hover {
+        color: #EF5C35;
+        background-color: transparent;
+        border-color: #EF5C35; 
+    }
+}
+
+#registerForm {
+    display: none;
+}
+
+.login-logo {
+    padding: 40px 0 80px 0;
+}
+
+.register-logo {
+    padding-bottom: 20px;
+}
+
+#loginCardBody .form-control {
+   border: 1px solid #EF5C35;
+   border-radius: 12px;
+}
+#signupCardBody .form-control{
+    border: 1px solid #EF5C35;
+    border-radius: 12px;
+}
+
+.register-back, .login-back {
+    color: #ff4e00;
+}
+
+.register-back:hover, .login-back:hover {
+    color: #D86A48;
+    transition: .3s;
+    cursor: pointer;
+}
+
+.login-btn, .register-btn  {
+    border-radius: 12px;
+    padding: 8px 30px;
+    background-color: #EF5C35;
+    border-color: #D86A48;
+    }
+
+.login-btn:hover, .register-btn:hover  {
+    color: #FF4E00;
+    background-color:transparent;
+    border-color: #EF5C35;
+    transition: .4s;
+    }
+
+
+.right-icons {
+   justify-content: center;
+   list-style-type: none;
+   li {
+     margin: 90px 15px 0 15px;
+     a {
+        color: #FF4E00;
+     }
+     a:hover{
+        color: #D86A48;
+        transition: .4s;
+     }
+    } 
+}
+.right-links {
+   justify-content: center;
+   list-style-type: none;
+   li {
+     margin: 30px 15px 0 15px;
+     a {
+        color: #707070;
+        font-size: 18px;
+     }
+     a:hover{
+        color: #FF4E00;
+        text-decoration: none;
+        transition: .4s;
+     }
+    } 
+}
+
+// *********************************************************************************
+// Login Page
+// *********************************************************************************
+
+//navbar 
+.nav-profile-pic {
+    border-radius: 160px;
+    border: 2px solid #ff4e00;
+    width: 60px;
+    height: 60px;
+    float: right;
+}
+
+.nav-item:hover {
+    cursor: pointer;
+}
+
+.right-nav {
+    float: right;
+}
+
+
+
+#search_form {  
+    position: relative;
+    z-index: 100;
+
+    #search_results {
+        position: absolute;
+        left: 0;
+        top: 100%;
+    }
+}
+
+//Comments
+.comment-loop {
+    max-height: 150px;
+    overflow-y: scroll;
+    display: none;
+    .my_comment {
+        color: #ff4e00;
+    }
+}
+
+hr {
+    clear: both;
+}
+.project-meta {
+    padding-bottom: 1em;
+    &:after {
+        content: "";
+        clear: both;
+        display: block;
+    }
+}
+
+//Profile
+.outer-img-box{
+    width: 100%;
+    object-fit: cover;
+    height: 100%;
+}
+
+.inner-img {
+    width: 300px;
+    height: 300px;
+    overflow: hidden;
+}
+
+//Edit profile
+.custom-file-input {
+    background-color: #ff4e00 !important;
+}
+
+
+.custom-file-input:lang(en) ~ .custom-file-label::after {
+    background-color: #ff4e00 !important;
+    color: white;
+}
+
+
+
+
+
+
+
+//!!!!!
+//make a min width and min height of "img" tag for user posted imagess so the image wont be too small!!!!!!!!!!!!
