@@ -5,9 +5,8 @@
     ?>
 
        
-<div class="container">
-
-        <nav class="navbar navbar-expand-lg navbar-light bg-light my-4">
+<nav class="navbar sticky-top navbar-expand-lg navbar-light bg-light my-2" id="nav">
+    <div class="container">
 
                 <div class="col-md-4">
                     <a class="navbar-brand" href="/"><img src="/views/assets/images/skysocial-logo.png" alt="SkySocial logo on transparent background"></a>

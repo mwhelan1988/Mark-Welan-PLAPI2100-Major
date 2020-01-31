@@ -23,7 +23,7 @@ require_once("elements/nav.php");
 
                     ?>
 
-<div class="container">
+<div class="container test-class">
         <div class="row">
 
 
@@ -167,7 +167,7 @@ require_once("elements/nav.php");
 
             <!-- <div class="col-md-4" id="searchArea"> -->
 
-            <div class="col-md-4" id="projectFeed">
+            <div class="col-md-4 fixed-input" id="projectFeed">
                 <div class="card mt-3">
                     <div class="card-header upload-card-header">
                         <p class="submit-text">Submit an image or short video, and share with your drone friends!</p>
