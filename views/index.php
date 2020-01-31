@@ -168,10 +168,11 @@ require_once("elements/nav.php");
             <!-- <div class="col-md-4" id="searchArea"> -->
 
             <div class="col-md-4" id="projectFeed">
-                <div class="card mt-4">
+                <div class="card mt-3">
                     <div class="card-header">
                         <h4>Share your new Creation!</h4>
                     </div> <!--end of card-header-->
+                    
                     <div class="card-body">
                         <form action="/projects/add.php" method="post" enctype="multipart/form-data">
                             <img id="img-preview" class="w-100">

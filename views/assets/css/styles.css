@@ -10572,15 +10572,25 @@ body {
 
 @font-face {
   font-family: gotham;
-  src: url(/views/assets/fonts/gotham-narrow-book.otf);
+  src: url(/assets/fonts/gotham-narrow-book.otf);
 }
 
-p {
+@font-face {
+  font-family: maven;
+  src: url(/assets/fonts/MavenPro-VariableFont/wght.ttf);
+}
+
+h1 h2 h3 h4 h5 h6 {
   font-family: gotham, Arial, Helvetica, sans-serif;
 }
 
 body {
   background-color: rgba(127, 190, 65, 0.05);
+  font-family: maven, Arial, Helvetica, sans-serif;
+}
+
+p {
+  font-family: maven, Arial, Helvetica, sans-serif;
 }
 
 #landingBanner {
