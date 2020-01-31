@@ -23,8 +23,9 @@
                             <form class="form-inline" id="search_form">
                                 <input id="search" type="search" autocomplete="off" name="search" class="form-control" placeholder="search">
                                 <div id="search_results">
-                            </form>
-                                </div>
+                                    
+                                    </div>
+                                </form>
                     </div>
                 </div> <!--End of col-md-3 search-->
             

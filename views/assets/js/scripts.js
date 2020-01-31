@@ -186,8 +186,14 @@ $(document).ready(function(){
                         search_results =  JSON.parse(search_results);
 
                         var output = "<div class='list-group'>";
+                
                         $.each(search_results, function(i, search_result){
-                            output += "<a href='/projects?id="+search_result.id+"' class='list-group-item'>"+search_result.title+"</a>";
+                            if(search_result.user_id) {
+                                output += "<a href='/projects?id="+search_result.id+"' class='list-group-item'>"+search_result.title+"</a>";
+                            } else {
+                                output += "<a href='/users?id="+search_result.id+"' class='list-group-item'>"+search_result.title+"</a>";
+                            }
+
                         });
                         output += "</div>";
                         $("#search_results").html(output);
