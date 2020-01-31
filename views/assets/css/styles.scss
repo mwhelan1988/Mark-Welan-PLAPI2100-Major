@@ -21,12 +21,7 @@ body {
 
 @font-face {
     font-family: gotham;
-    src: url(/assets/fonts/gotham-narrow-book.otf);
-}
-
-@font-face {
-    font-family: maven;
-    src: url(/assets/fonts/MavenPro-VariableFont/wght.ttf);
+    src: url(/views/assets/fonts/gotham-narrow-book.otf);
 }
 
 h1 h2 h3 h4 h5 h6 {
@@ -35,11 +30,11 @@ h1 h2 h3 h4 h5 h6 {
 
 body {
     background-color: rgba($color: #7fbe41, $alpha: .05);
-    font-family: maven, Arial, Helvetica, sans-serif;
+    font-family: 'Maven Pro', sans-serif, Arial, Helvetica, sans-serif;
 }
 
 p {
-    font-family: maven, Arial, Helvetica, sans-serif;
+    font-family: 'Maven Pro', sans-serif, Arial, Helvetica, sans-serif;
 }
 
 
@@ -216,6 +211,44 @@ p {
     }
 }
 
+//posted projects
+
+.project-post {
+    margin-bottom: 40px !important;
+}
+
+//submit card
+.submit-text {
+    font-size: 18px;
+    color: #363636;
+}
+
+.upload-card-header {
+    padding-bottom: 10px;
+    padding-top: 15px;
+}
+
+.input-upload-card {
+    padding-top: 0px;
+}
+
+#projectFeed .card, .card-header, .card-body {
+    border: none;
+    background-color: #F4EFEF;
+    border-radius: 20px;
+}
+
+#projectFeed .card-header:first-child {
+    border-radius: 20px; 
+}
+
+.input-upload-card {
+    padding-top: none;
+}
+
+
+
+
 //Comments
 .comment-loop {
     max-height: 150px;
@@ -254,12 +287,16 @@ hr {
 //Edit profile
 .custom-file-input {
     background-color: #ff4e00 !important;
+    cursor: pointer;
 }
-
 
 .custom-file-input:lang(en) ~ .custom-file-label::after {
     background-color: #ff4e00 !important;
     color: white;
+}
+
+.input-upload-card .form-control {
+    border: .25px solid #707070;
 }
 
 

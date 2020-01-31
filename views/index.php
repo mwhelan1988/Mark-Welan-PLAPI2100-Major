@@ -68,7 +68,7 @@ require_once("elements/nav.php");
 
                         foreach($projects as $project) {
                             ?>
-                            <div class="card project-post mt-3">
+                            <div class="card project-post my-3">
                                 <div class="card-header">
                                     
                                     <h4><a href="/users?id=<?=$project['user_id']?>"><?=$project['firstname']. " " . $project["lastname"]?></a>
@@ -169,28 +169,28 @@ require_once("elements/nav.php");
 
             <div class="col-md-4" id="projectFeed">
                 <div class="card mt-3">
-                    <div class="card-header">
-                        <h4>Share your new Creation!</h4>
+                    <div class="card-header upload-card-header">
+                        <p class="submit-text">Submit an image or short video, and share with your drone friends!</p>
                     </div> <!--end of card-header-->
                     
-                    <div class="card-body">
+                    <div class="card-body input-upload-card">
                         <form action="/projects/add.php" method="post" enctype="multipart/form-data">
                             <img id="img-preview" class="w-100">
                             <div class="form-group custom-file">
                                 <input class="custom-file-input" id="file-with-preview" type="file" name="fileToUpload" class="form-control" required>
-                                <label class="custom-file-label">Upload Creation</label>
+                                <label class="custom-file-label">Attach an image or video</label>
                             </div>
 
                             <div class="form-group mt-3">
-                                <input class="form-control" type="text" name="title" placeholder="MOC Name" required>
+                                <input class="form-control" type="text" name="title" placeholder="Give your adventure a title!" required>
                             </div>
 
                             <div class="form-group mt-3">
-                                <textarea class="form-control" name="description" placeholder="MOC Description" required></textarea>
+                                <textarea class="form-control" name="description" placeholder="Tell everyone your story." required></textarea>
                             </div>
 
                             <div class="form-group text-right">
-                                <button type="submit" class="btn btn-outline-warning">Post MOC!</button>
+                                <button type="submit" class="btn btn-outline-primary">Post MOC!</button>
                             </div>
                         </form>
 

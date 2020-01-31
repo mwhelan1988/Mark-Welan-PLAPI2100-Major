@@ -12,6 +12,9 @@
     <!--Style Sheet-->
     <link rel="stylesheet" href="/assets/css/styles.css">
 
+    <!--Maven Pro google font-->
+    <link href="https://fonts.googleapis.com/css?family=Maven+Pro&display=swap" rel="stylesheet">
+
    
   </head>
   <body>
