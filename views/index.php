@@ -32,7 +32,7 @@ require_once("elements/nav.php");
                 Click this to open modal
             </button>
 
-            </div> <--remove later?!?!?-->
+        </div> 
 
 
         <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
