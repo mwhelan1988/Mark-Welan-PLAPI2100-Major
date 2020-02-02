@@ -23,7 +23,7 @@ require_once("elements/nav.php");
 
                     ?>
 
-<div class="container test-class">
+<div class="container login-landing-page">
         <div class="row">
 
 
@@ -78,8 +78,8 @@ require_once("elements/nav.php");
                                     ?>
 
                                         <span class="float-right">
-                                            <a href="/projects/edit.php?id=<?=$project['id']?>"><i class="fas fa-edit"></i></a>
-                                            <a href="/projects/delete.php?id=<?=$project['id']?>"><i class="fas fa-trash"></i></a>
+                                            <a href="/projects/edit.php?id=<?=$project['id']?>"><i class="fas fa-edit fa-xs"></i></a>
+                                            <a href="/projects/delete.php?id=<?=$project['id']?>"><i class="fas fa-trash fa-xs"></i></a>
                                         </span>
                                         <?php
                                     }
@@ -87,16 +87,11 @@ require_once("elements/nav.php");
                                 </div> <!--End of card-header-->
 
                                 <div class="card-img">
-                                    <img src="<?=$project['file_url']?>" class="img-fluid 2=100">
+                                    <img src="<?=$project['file_url']?>" class="img-fluid post-img">
                                 </div> <!--End of card-img-->
 
                                 <div class="card-body">
-                                    <h4><?=$project['title']?></h4>
-                                    <p><?=$project['description']?></p>
-                                    <p><small class="text-muted">Posted <?=date("M d, Y", strtotime($project['date_uploaded']))?></small></p>
-                                </div> <!--End of card body-->
 
-                                <div class="card-footer">
                                 <?php
                                     $love_class = 'far';
                                     if(!empty($project['love_id'] ) ) {
@@ -118,6 +113,13 @@ require_once("elements/nav.php");
                                         </span>
                                     </div> <!--End of project meta-->
 
+                                    <h4><?=$project['title']?></h4>
+                                    <p><?=$project['description']?></p>
+                                    <p><small class="text-muted">Posted <?=date("M d, Y", strtotime($project['date_uploaded']))?></small></p>
+                                </div> <!--End of card body-->
+
+                                <div class="card-footer">
+                                
                                     <hr>
 
                                     <div class="comment-loop pt-4">
@@ -194,7 +196,7 @@ require_once("elements/nav.php");
                             </div>
                         </form>
 
-                    </div> <!--end of card-header-->        
+                    </div> <!--end of card-body-->        
                 </div> <!--end of card class-->
             </div> <!--end of col-md-4-->
 

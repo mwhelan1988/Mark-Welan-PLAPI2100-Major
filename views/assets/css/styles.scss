@@ -48,6 +48,16 @@ p {
     min-height: 800px;
 }
 
+
+#loginCardBody {
+    background-color: transparent;
+}
+
+#signupCardBody {
+    background-color: transparent;
+}
+
+
 //Landing Page footer
 
 .footer {
@@ -203,8 +213,6 @@ p {
     float: right;
 }
 
-
-
 #search_form {  
     position: relative;
     z-index: 100;
@@ -216,7 +224,15 @@ p {
     }
 }
 
+.cog {
+    color: #FF4E00;
+}
+
 //posted projects
+
+.login-landing-page {
+    margin-top: 50px;
+}
 
 .project-post {
     margin-bottom: 40px !important;
@@ -242,6 +258,11 @@ p {
     position: fixed;
 }
 
+#projectFeed {
+    right: 0;
+    margin-right: 50px;
+}
+
 #projectFeed .card, .card-header, .card-body {
     border: none;
     background-color: #F4EFEF;
@@ -256,7 +277,11 @@ p {
     padding-top: none;
 }
 
-
+.post-img {
+    width: 100%;
+    object-fit: cover;
+    height: 100%;
+}
 
 
 //Comments
@@ -294,6 +319,33 @@ hr {
     overflow: hidden;
 }
 
+//profile
+.edit-img-preview {
+    width: 150px;
+    height: 150px;
+    overflow: hidden; 
+    border: 2px solid #FF4E00;
+    border-radius: 100px;
+}
+
+.profile-landing {
+    margin: 75px 0px;
+}
+
+.edit-btn {
+    border-radius: 12px;
+    padding: 8px 30px;
+    background-color: #EF5C35;
+    border-color: #D86A48;  
+}
+
+.edit-btn:hover {
+    color: #FF4E00;
+    background-color:transparent;
+    border-color: #EF5C35;
+    transition: .4s;
+}
+
 //Edit profile
 .custom-file-input {
     background-color: #ff4e00 !important;
@@ -308,6 +360,26 @@ hr {
 .input-upload-card .form-control {
     border: .25px solid #707070;
 }
+
+.form-group {
+    position: relative;
+}
+
+.input-icons i { 
+    position: absolute; 
+    z-index: 10;
+    margin: 10px 0 0 10px;
+    color: #ff4e00;  
+} 
+
+#username, #firstname, #lastname, #password, #password2 {
+    padding-left: 30px;   
+}
+
+.form-control #password {
+    font-size: 12px;
+}
+
 
 
 

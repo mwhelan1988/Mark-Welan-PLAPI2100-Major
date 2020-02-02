@@ -158,6 +158,16 @@ public function edit() {
           
       }
     }
+
+    public function delete($user_id) {
+        if ($_SESSION["user_logged_in"] == $user_id) {
+            $sql = "DELETE FROM users WHERE id = $user_id";
+            
+            $this->execute($sql);
+        } else {
+            $_SESSION["errors"] = "You do not have permission to delete this user";
+        }
+    }
 }
 
 

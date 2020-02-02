@@ -23,32 +23,44 @@ if( !empty($_GET['id']) ) {
 ?>
 
 
-<div class="container">
-    <div class="row">
-        <div class="col-md-6 mx-auto">
-            <h2>My Profile</h2>
-            <hr>
-            <img id="img-preview" src="<?=$selected_user ['profile_pic']?>">
+    <div class="container profile-landing">
+        <div class="row">
 
-            <?php  echo $selected_user ['firstname'] . " " . $selected_user ['lastname'] ?>
+            <div class="col-md-2"><!--Leave empty--></div>
 
-            
-            <?php
-                if($selected_user['id'] == $_SESSION['user_logged_in'] ) {
-            ?>
+                <div class="col-md-2">
+        
+                    <img id="img-preview" class="edit-img-preview" src="<?=$selected_user['profile_pic']?>">
 
-            
-            <p>
-                <a href="/users/edit.php" class="btn btn-primary">Edit User</a>
-            </p>
+                </div><!--end of col-md-2-->
 
-            <?php
-            }
-            ?>
+                <div class="col-md-1"><!--Leave empty--></div>
+
+                <div class="col-md-4">
+
+                    <?php  echo "<h4 class='mt-2'>" . $selected_user['username'] . "</h4><br>" . $selected_user['firstname'] . " " . $selected_user['lastname'] ."<br><br>". $selected_user['bio'] ?>
+
+                    
+                    <?php
+                        if($selected_user['id'] == $_SESSION['user_logged_in'] ) {
+                    ?>
+                </div>
+
+                <div class="col-md-3">
+                    <p>
+                        <a href="/users/edit.php" class="btn btn-primary edit-btn mt-2">Edit Profile</a>
+                    </p>
+                </div>
+                    
+                    <?php
+                    }
+                    ?>
+
+
+ 
            
-           
-        </div>
-    </div>
+        </div> <!--end of row-->
+    </div> <!--end of container-->
 
     <div class="container">
         <div class="row">
@@ -65,9 +77,9 @@ if( !empty($_GET['id']) ) {
 
                 ?>  
                     
-                        <div class="col-md-4">
+                        <div class="col-md-4 my-4">
                             <div class="outer-img-box">
-                             <img class="inner-img" src="<?= $user_project['file_url'] ?>" alt="">
+                                <img class="inner-img" src="<?= $user_project['file_url'] ?>" alt="">
                             </div>
                         </div>
             
@@ -82,7 +94,7 @@ if( !empty($_GET['id']) ) {
 
 
 
-</div>
+
 
 
 <?php

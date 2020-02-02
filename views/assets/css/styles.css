@@ -10595,6 +10595,14 @@ p {
   min-height: 800px;
 }
 
+#loginCardBody {
+  background-color: transparent;
+}
+
+#signupCardBody {
+  background-color: transparent;
+}
+
 .footer {
   font-size: 13px;
   background-color: #363636;
@@ -10778,6 +10786,14 @@ p {
   top: 100%;
 }
 
+.cog {
+  color: #FF4E00;
+}
+
+.login-landing-page {
+  margin-top: 50px;
+}
+
 .project-post {
   margin-bottom: 40px !important;
 }
@@ -10800,6 +10816,11 @@ p {
   position: fixed;
 }
 
+#projectFeed {
+  right: 0;
+  margin-right: 50px;
+}
+
 #projectFeed .card, .card-header, .card-body {
   border: none;
   background-color: #F4EFEF;
@@ -10812,6 +10833,13 @@ p {
 
 .input-upload-card {
   padding-top: none;
+}
+
+.post-img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  height: 100%;
 }
 
 .comment-loop {
@@ -10851,6 +10879,33 @@ hr {
   overflow: hidden;
 }
 
+.edit-img-preview {
+  width: 150px;
+  height: 150px;
+  overflow: hidden;
+  border: 2px solid #FF4E00;
+  border-radius: 100px;
+}
+
+.profile-landing {
+  margin: 75px 0px;
+}
+
+.edit-btn {
+  border-radius: 12px;
+  padding: 8px 30px;
+  background-color: #EF5C35;
+  border-color: #D86A48;
+}
+
+.edit-btn:hover {
+  color: #FF4E00;
+  background-color: transparent;
+  border-color: #EF5C35;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
 .custom-file-input {
   background-color: #ff4e00 !important;
   cursor: pointer;
@@ -10863,5 +10918,24 @@ hr {
 
 .input-upload-card .form-control {
   border: .25px solid #707070;
+}
+
+.form-group {
+  position: relative;
+}
+
+.input-icons i {
+  position: absolute;
+  z-index: 10;
+  margin: 10px 0 0 10px;
+  color: #ff4e00;
+}
+
+#username, #firstname, #lastname, #password, #password2 {
+  padding-left: 30px;
+}
+
+.form-control #password {
+  font-size: 12px;
 }
 /*# sourceMappingURL=styles.css.map */

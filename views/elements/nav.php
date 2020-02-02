@@ -45,7 +45,7 @@
                         <div class="navbar-collapse collapse right-nav" id="mainNavBar">
                             <ul class="navbar-nav">      
                                 <li class="nav-item dropdown">
-                                    <a class="nav-link dropdown-item" id="accountDropdown" data-toggle="dropdown"><i class="fas fa-cogs fa-lg"></i></a>
+                                    <a class="nav-link dropdown-item" id="accountDropdown" data-toggle="dropdown"><i class="fas fa-cogs fa-lg cog"></i></a>
                                         <div class="dropdown-menu">
                                             <a class="dropdown-item" href="/users/">My Profile</a>
                                             <a class="dropdown-item" href="/users/logout.php">Logout</a>
