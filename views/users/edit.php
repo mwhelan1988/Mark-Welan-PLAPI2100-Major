@@ -17,7 +17,7 @@ require_once("../elements/nav.php");
 // print_r($current_user);
 ?>
 
-<div class="container">
+<div class="container edit-user-pad">
     <div class="row">
 
         <div class="col-md-2"><!--Leave this empty--></div>
@@ -26,6 +26,13 @@ require_once("../elements/nav.php");
              <!--Profile Picture-->
              <div class="text-center">
                  <img id="img-preview" class="edit-img-preview" src="<?=$current_user['profile_pic']?>">
+
+                 <div id="modalTest" class="edit-btn-update">
+                        <button type="button" class="btn btn-danger modal-btn" data-toggle="modal" data-target="#exampleModal">
+                            Delete Account
+                        </button>
+                    </div>
+
              </div>
         </div>
 
@@ -38,7 +45,7 @@ require_once("../elements/nav.php");
          
                 <div class="form-group custom-file mb-3">
                     <input class="custom-file-input" id="file-with-preview" type="file" name="fileToUpload" class="form-control">
-                    <label class="custom-file-label">Upload Creation</label>
+                    <label class="custom-file-label">Upload profile pic.</label>
                 </div>
 
 
@@ -99,18 +106,15 @@ require_once("../elements/nav.php");
                 </div>
                 </div>
 
-                <div class="text-right edit-btn-update">
-                    <button class="btn btn-primary update-btn">Update</button>
-                </div>
 
-               <div id="modalTest" class="edit-btn-update">
-            <button type="button" class="btn btn-danger modal-btn" data-toggle="modal" data-target="#exampleModal">
-                Delete Account
-            </button>
+                        <div class="text-right edit-btn-update">
+                            <button class="btn btn-primary update-btn">Update</button>
+                        </div>
 
-        </div> 
+                   
+        </div> <!--End of col-md-4-->
 
-
+                
         <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
             <div class="modal-dialog" role="document">
                 <div class="modal-content">

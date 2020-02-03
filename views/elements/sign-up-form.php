@@ -32,7 +32,14 @@
                             <h5>Profile Info</h5>
                             <input type="text" class="form-control mb-3" name="firstname" placeholder="First Name" required>  
                             <input type="text" class="form-control mb-3" name="lastname" placeholder="Last Name" required>
+                            
                             <textarea class="form-control mb-3" name="bio" placeholder="Bio" required></textarea>
+
+                            <!-- <div class="form-group custom-file mb-3">
+                                <input class="custom-file-input" id="file-with-preview" type="file" name="fileToUpload" class="form-control" required>
+                                <label class="custom-file-label">Upload profile pic.</label>
+                            </div> -->
+
                             <div class="text-left">
                                <span>Already have an account? <br/> <span id="hideRegister" class="register-back"> Click here.</span></span>
                                <button type="submit" class="btn btn-primary float-right register-btn" name="registerButton">Register</button>  

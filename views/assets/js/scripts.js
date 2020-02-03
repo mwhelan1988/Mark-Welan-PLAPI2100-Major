@@ -12,6 +12,8 @@ $(document).ready(function(){
     });
     
     $("#projectFeed").on('click', '.comment-btn', function(){
+        console.log("click");
+        
         var comment_loop = $(this).closest('.project-post').find('.comment-loop');
 
         comment_loop.slideToggle(500, function(){
@@ -207,6 +209,22 @@ $(document).ready(function(){
             console.log(user_search);
 
         });
+
+
+
+        //img preview
+        //if profile image is not set, display none
+        //if profile image is set, show
+        $("#img-preview").each(function(){
+
+            if ($(this).attr("src") == "") 
+                $(this).hide();
+            else
+                $(this).show();
+            });
+
+
+
 
 
 });

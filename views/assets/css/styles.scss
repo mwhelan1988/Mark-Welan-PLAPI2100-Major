@@ -286,6 +286,21 @@ p {
     border-radius: 20px; 
 }
 
+#projectInput {
+    right: 0;
+    margin-right: 50px;
+}
+
+#projectInput .card, .card-header, .card-body {
+    border: none;
+    background-color: #F4EFEF;
+    border-radius: 20px;
+}
+
+#projectInput .card-header:first-child {
+    border-radius: 20px; 
+}
+
 .post-submit:hover {
     color: #FF4E00;
     background-color:transparent;
@@ -412,6 +427,22 @@ hr {
     display: none;
 }
 
+.modal-btn {
+    margin-top: 135px;
+}
+
+.edit-user-pad {
+    margin-top: 50px;
+}
+
+.modal-header {
+    text-align: center !important;
+}
+
+.modal-body {
+    display: none;
+    padding: 0px !important;
+}
 
 
 
@@ -546,11 +577,17 @@ hr {
     .edit-btn-update {
         margin-bottom: 40px;
         text-align: center !important;
+        
     }
-
     .update-btn {
         width: 300px;
     }
+
+    .modal-btn {
+        margin-top: 20px;
+    }
+
+
 
 
 

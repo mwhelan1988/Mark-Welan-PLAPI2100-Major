@@ -27,7 +27,7 @@ require_once("elements/nav.php");
         <div class="row">
 
 
-        <div class="col-md-4 fixed-input" id="projectFeed">
+        <div class="col-md-4 fixed-input" id="projectInput">
                 <div class="card mt-3">
                     <div class="card-header upload-card-header">
                         <p class="submit-text">Submit an image or short video, and share with your drone friends!</p>
@@ -73,12 +73,16 @@ require_once("elements/nav.php");
                         // print_r($projects);
                         $c_model = new Comment;
 
+
+
                         foreach($projects as $project) {
                             ?>
                             <div class="card project-post my-3">
                                 <div class="card-header">
                                     
-                                    <h4><a href="/users?id=<?=$project['user_id']?>"><?=$project['firstname']. " " . $project["lastname"]?></a>
+                                    <h4><a href="/users?id=<?=$project['user_id']?>">
+                                                                        
+                                    <?=$project['firstname']. " " . $project["lastname"]?></a>
 
                                     <?php
                                         if($project['user_id'] == $_SESSION['user_logged_in'] ) {

@@ -34,7 +34,7 @@ require_once('../elements/nav.php');
                     <img id="img-preview" class="w-100" src="<?=$project['file_url']?>">
                             <div class="form-group custom-file">
                                 <input class="custom-file-input" id="file-with-preview" type="file" name="fileToUpload" class="form-control">
-                                <label class="custom-file-label">Upload Creation</label>
+                                <label class="custom-file-label">Attach image</label>
                             </div>
 
                             <div class="form-group mt-3">
