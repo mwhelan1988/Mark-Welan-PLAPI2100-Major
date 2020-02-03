@@ -120,7 +120,7 @@
 
                 <div class="col-md-4">
                     <small class="newsletter">Subscribe to our newsletter.</small>
-                    <div class="flex">
+                    <div class="flex newsletter-contain">
                         <div>
                             <div class="input-group mt-2">
                                 <input type="text" class="form-control footer-input" placeholder="Email Address">

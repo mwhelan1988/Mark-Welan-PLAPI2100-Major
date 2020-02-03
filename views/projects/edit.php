@@ -38,11 +38,11 @@ require_once('../elements/nav.php');
                             </div>
 
                             <div class="form-group mt-3">
-                                <input class="form-control" type="text" name="title" placeholder="MOC Name" value="<?=$project['title']?>" required>
+                                <input class="form-control" type="text" name="title" placeholder="Title" value="<?=$project['title']?>" required>
                             </div>
 
                             <div class="form-group mt-3">
-                                <textarea class="form-control" name="description" placeholder="MOC Description"required><?=$project['description']?></textarea>
+                                <textarea class="form-control" name="description" placeholder="Description"required><?=$project['description']?></textarea>
                             </div>
 
                             <div class="form-group text-right">

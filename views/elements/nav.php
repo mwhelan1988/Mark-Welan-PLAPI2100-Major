@@ -6,9 +6,9 @@
 
        
 <nav class="navbar sticky-top navbar-expand-lg navbar-light bg-light my-2" id="nav">
-    <div class="container">
+    <div class="container nav-container">
 
-                <div class="col-md-4">
+                <div class="col-md-4 nav-brand-mobile">
                     <a class="navbar-brand" href="/"><img src="/views/assets/images/skysocial-logo.png" alt="SkySocial logo on transparent background"></a>
                 </div> <!--End of col-md-4 logo-->
 
@@ -32,12 +32,12 @@
 
 
                 <div class="col-md-2">
-                    <img class="nav-profile-pic mx-auto" id="img-preview" src="<?=$current_user['profile_pic']?>">
+                    <a href="/users/"><img class="nav-profile-pic" id="img-preview" src="<?=$current_user['profile_pic']?>"></a> 
                 </div> <!--End of col-md-2 profile pic-->
 
 
 
-                <div class="col-md-2">   
+                <div class="col-md-2 browser-nav">   
                     <button class="navbar-toggler" data-toggle="collapse" data-target="#mainNavBar">
                         <i class="fas fa-bars"></i>
                     </button>
@@ -54,6 +54,19 @@
                             </ul>
                         </div> <!--End of navbar-collapse-->
                 </div><!--End of col-md-2 -->
+
+            <div class="col-md-2 mobile-nav">   
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#mainNavBar" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                    <i class="fas fa-bars"></i>
+                </button>
+
+                    <div class="collapse navbar-collapse right-nav" id="mainNavBar">
+                        <div class="navbar-nav">
+                            <a class="dropdown-item" href="/users/">My Profile</a>
+                            <a class="dropdown-item" href="/users/logout.php">Logout</a>
+                        </div>
+                    </div>
+                </div>
 
         </nav>
  

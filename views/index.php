@@ -27,33 +27,40 @@ require_once("elements/nav.php");
         <div class="row">
 
 
-    <!-- <div id="modalTest">
-            <button type="button" class="btn btn-primary modal-btn" data-toggle="modal" data-target="#exampleModal">
-                Click this to open modal
-            </button>
+        <div class="col-md-4 fixed-input" id="projectFeed">
+                <div class="card mt-3">
+                    <div class="card-header upload-card-header">
+                        <p class="submit-text">Submit an image or short video, and share with your drone friends!</p>
+                    </div> <!--end of card-header-->
+                    
+                    <div class="card-body input-upload-card">
+                        <form action="/projects/add.php" method="post" enctype="multipart/form-data">
+                            <img id="img-preview" class="w-100">
+                            <div class="form-group custom-file">
+                                <input class="custom-file-input" id="file-with-preview" type="file" name="fileToUpload" class="form-control" required>
+                                <label class="custom-file-label">Attach an image or video</label>
+                            </div>
 
-        </div> 
+                            <div class="form-group mt-3">
+                                <input class="form-control" type="text" name="title" placeholder="Give your adventure a title!" required>
+                            </div>
+
+                            <div class="form-group mt-3">
+                                <textarea class="form-control" name="description" placeholder="Tell everyone your story." required></textarea>
+                            </div>
+
+                            <div class="form-group text-right">
+                                <button type="submit" class="btn btn-primary post-submit">Submit</button>
+                            </div>
+                        </form>
+
+                    </div> <!--end of card-body-->        
+                </div> <!--end of card class-->
+        </div> <!--end of col-md-4-->
 
 
-        <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-            <div class="modal-dialog" role="document">
-                <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalLabel">Modal Title</h5>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                    <span aria-hidden="true">&times;</span>
-                    </button>
-                </div>
-                <div class="modal-body">
 
-                </div>
-                <div class="modal-footer">
-                     <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                </div>
-                </div>
-            </div>
-        </div>
-    </div> -->
+
       
         <div class="col-md-2"><!--Leave Empty--></div>
 
@@ -148,7 +155,9 @@ require_once("elements/nav.php");
 
                                     <hr>
 
+                                   
                                     <p class='comment-btn'>Show comments</p>
+                       
 
                                     <form class="comment-form" data-project="<?=$project['id']?>">
                                         <input type="text" name="comment" placeholder="Write a comment." class="form-control comment-box">
@@ -168,39 +177,6 @@ require_once("elements/nav.php");
 
 
             <!-- <div class="col-md-4" id="searchArea"> -->
-
-            <div class="col-md-4 fixed-input" id="projectFeed">
-                <div class="card mt-3">
-                    <div class="card-header upload-card-header">
-                        <p class="submit-text">Submit an image or short video, and share with your drone friends!</p>
-                    </div> <!--end of card-header-->
-                    
-                    <div class="card-body input-upload-card">
-                        <form action="/projects/add.php" method="post" enctype="multipart/form-data">
-                            <img id="img-preview" class="w-100">
-                            <div class="form-group custom-file">
-                                <input class="custom-file-input" id="file-with-preview" type="file" name="fileToUpload" class="form-control" required>
-                                <label class="custom-file-label">Attach an image or video</label>
-                            </div>
-
-                            <div class="form-group mt-3">
-                                <input class="form-control" type="text" name="title" placeholder="Give your adventure a title!" required>
-                            </div>
-
-                            <div class="form-group mt-3">
-                                <textarea class="form-control" name="description" placeholder="Tell everyone your story." required></textarea>
-                            </div>
-
-                            <div class="form-group text-right">
-                                <button type="submit" class="btn btn-outline-primary">Post MOC!</button>
-                            </div>
-                        </form>
-
-                    </div> <!--end of card-body-->        
-                </div> <!--end of card class-->
-            </div> <!--end of col-md-4-->
-
-                   
 
 
 

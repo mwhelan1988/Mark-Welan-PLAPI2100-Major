@@ -99,11 +99,11 @@ require_once("../elements/nav.php");
                 </div>
                 </div>
 
-                <div class="text-right">
-                    <button class="btn btn-primary">Update</button>
+                <div class="text-right edit-btn-update">
+                    <button class="btn btn-primary update-btn">Update</button>
                 </div>
 
-               <div id="modalTest">
+               <div id="modalTest" class="edit-btn-update">
             <button type="button" class="btn btn-danger modal-btn" data-toggle="modal" data-target="#exampleModal">
                 Delete Account
             </button>

@@ -188,7 +188,7 @@ p {
 }
 
 // *********************************************************************************
-// Login Page
+// Members Page
 // *********************************************************************************
 
 //navbar 
@@ -238,6 +238,19 @@ p {
     margin-bottom: 40px !important;
 }
 
+.love-btn:hover {
+    cursor: pointer;
+}
+
+.comment-btn:hover {
+    cursor: pointer;
+}
+
+.comment-btn {
+    display: inline-block;
+}
+
+
 //submit card
 .submit-text {
     font-size: 18px;
@@ -273,6 +286,14 @@ p {
     border-radius: 20px; 
 }
 
+.post-submit:hover {
+    color: #FF4E00;
+    background-color:transparent;
+    border-color: #EF5C35;
+    transition: .4s;
+
+}
+
 .input-upload-card {
     padding-top: none;
 }
@@ -282,6 +303,12 @@ p {
     object-fit: cover;
     height: 100%;
 }
+
+.project-post .card-footer {
+    background-color: #F4EFEF;
+}
+
+
 
 
 //Comments
@@ -329,7 +356,8 @@ hr {
 }
 
 .profile-landing {
-    margin: 75px 0px;
+    margin-top: 75px;
+    margin-bottom: 75px;
 }
 
 .edit-btn {
@@ -380,6 +408,149 @@ hr {
     font-size: 12px;
 }
 
+.mobile-nav {
+    display: none;
+}
+
+
+
+
+
+// **********************************************************************
+// Media Query
+// **********************************************************************
+
+
+//Sign-up page(media query) 
+
+@media only screen and (max-width: 786px) {
+    #landingBanner {
+        background-image: url(/views/assets/images/landingpage-background.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        min-height: 800px;
+    }
+
+    h3 {
+        text-align: center;
+        font-size: 24px;
+    }
+    .text-secondary {
+        color: #ffffff !important;
+        font-size: 15px;
+    }
+
+    .right-links {
+      li {
+        margin: 30px 9px 0px 9px;
+            a {
+             color: #ffffff !important;
+            }
+        }
+    }
+
+    .footer-content {
+        text-align: center;
+    }
+
+    .newsletter-contain {
+       margin-left: 50px;
+
+    }
+
+    //Members area(media query)
+    .navbar-brand {
+        width: 200px;
+        margin-bottom: 20px;
+    }
+
+    .nav-brand-mobile {
+        text-align: center;
+    }
+
+    .nav-container {
+        position: relative;
+        margin-bottom: 85px;
+     
+
+        .nav-profile-pic {
+            position: absolute;
+            margin-top: 20px;
+            margin-left: 20px;
+        }
+        .navbar-toggler {
+            position: absolute;
+            margin-left: 240px;
+            margin-top: 28px;
+            color: #ff4e00;
+            border: 1px solid #ff4e00;
+        }
+    }
+
+    .fixed-input {
+        position: static;
+    }
+
+    #projectFeed {
+        margin: auto;
+    }
+
+    .text-right{
+        text-align: center;
+        .post-submit {
+            width: 300px;
+        }
+    }
+    .login-landing-page {
+        margin-top: 20px;
+    }
+
+    .dropdown-menu a {
+        color: #ff4e00;
+    }
+
+    .browser-nav {
+        display: none;
+    }
+
+    .mobile-nav {
+        display: block;
+        .navbar-nav {
+            text-align: center;
+            margin-top: 80px;
+            font-size: 18px;
+        }
+    }
+    .navbar {
+        max-height: 300px;
+    }
+
+    //profile page
+    .profile-landing {
+        text-align: center;
+    }
+
+    .edit-img-preview {
+        margin-bottom: 15px;
+    }
+
+    .profile-landing {
+        margin-top: 25px;
+        margin-bottom: 25px;
+    }
+
+    .img-box {
+        text-align: center;
+    }
+
+    .edit-btn-update {
+        margin-bottom: 40px;
+        text-align: center !important;
+    }
+
+    .update-btn {
+        width: 300px;
+    }
 
 
 
@@ -388,6 +559,5 @@ hr {
 
 
 
+  }
 
-//!!!!!
-//make a min width and min height of "img" tag for user posted imagess so the image wont be too small!!!!!!!!!!!!

@@ -26,9 +26,10 @@ if( !empty($_GET['id']) ) {
     <div class="container profile-landing">
         <div class="row">
 
+
             <div class="col-md-2"><!--Leave empty--></div>
 
-                <div class="col-md-2">
+                <div class="col-md-2 text-center">
         
                     <img id="img-preview" class="edit-img-preview" src="<?=$selected_user['profile_pic']?>">
 
@@ -36,7 +37,7 @@ if( !empty($_GET['id']) ) {
 
                 <div class="col-md-1"><!--Leave empty--></div>
 
-                <div class="col-md-4">
+                <div class="col-md-3">
 
                     <?php  echo "<h4 class='mt-2'>" . $selected_user['username'] . "</h4><br>" . $selected_user['firstname'] . " " . $selected_user['lastname'] ."<br><br>". $selected_user['bio'] ?>
 
@@ -46,7 +47,7 @@ if( !empty($_GET['id']) ) {
                     ?>
                 </div>
 
-                <div class="col-md-3">
+                <div class="col-md-4">
                     <p>
                         <a href="/users/edit.php" class="btn btn-primary edit-btn mt-2">Edit Profile</a>
                     </p>
@@ -60,7 +61,7 @@ if( !empty($_GET['id']) ) {
  
            
         </div> <!--end of row-->
-    </div> <!--end of container-->
+    </div> <!--end of container profile-landing-->
 
     <div class="container">
         <div class="row">
@@ -77,7 +78,7 @@ if( !empty($_GET['id']) ) {
 
                 ?>  
                     
-                        <div class="col-md-4 my-4">
+                        <div class="col-md-4 my-4 img-box">
                             <div class="outer-img-box">
                                 <img class="inner-img" src="<?= $user_project['file_url'] ?>" alt="">
                             </div>
@@ -88,8 +89,8 @@ if( !empty($_GET['id']) ) {
                 }
                 ?>
 
-        </div>
-    </div>
+        </div> <!--End of row-->
+    </div> <!--End of container-->
 
 
 
