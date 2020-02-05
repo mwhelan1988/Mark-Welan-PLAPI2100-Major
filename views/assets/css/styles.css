@@ -10786,6 +10786,10 @@ p {
   top: 100%;
 }
 
+#search {
+  width: 300px;
+}
+
 .cog {
   color: #FF4E00;
 }

@@ -14,18 +14,19 @@
 
 
 
-                <div class="col-md-1"><!--Leave empty--></div>
+              
 
 
 
-                <div class="col-md-3">
+                <div class="col-md-4">
                     <div class="search-locate">
-                            <form class="form-inline" id="search_form">
-                                <input id="search" type="search" autocomplete="off" name="search" class="form-control" placeholder="search">
+
+                            <form class="form-inline"  id="search_form">
+                                <input id="search" type="search" autocomplete="off" name="search" class="form-control" placeholder="Search @user/post title.">
                                 <div id="search_results">
                                     
-                                    </div>
-                                </form>
+                                </div>
+                            </form>
                     </div>
                 </div> <!--End of col-md-3 search-->
             
