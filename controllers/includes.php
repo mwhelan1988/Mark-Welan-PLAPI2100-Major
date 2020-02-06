@@ -1,8 +1,8 @@
 <?php
 //DON'T FORGET TO COMMENT THESE 3 LINES OUT AT THE END OF THE PROJECT!!!!!
-ini_set('display_errors', 1);
-ini_set('display_startup_errors', 1);
-error_reporting(E_ALL);
+// ini_set('display_errors', 1);
+// ini_set('display_startup_errors', 1);
+// error_reporting(E_ALL);
 
 if(!isset( $_SESSION ) ) session_start();
 

@@ -140,11 +140,8 @@ require_once("../elements/nav.php");
         </div>
     </div>
 
-
-
             </form>
-           
-           
+                      
         </div> <!--End of col-md-4-->
 
         <div class="col-md-2"><!--Leave this empty--></div>
