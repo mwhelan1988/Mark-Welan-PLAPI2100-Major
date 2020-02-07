@@ -448,6 +448,26 @@ hr {
     padding: 0px !important;
 }
 
+//edit post
+.edit-card {
+    border: none;
+}
+
+.edit-card-header {
+    border-radius: 25px 25px 0px 0px !important;
+}
+
+.edit-card-body {
+    border-radius: 0px 0px 25px 25px;
+}
+
+.edit-btn-hov:hover {
+    color: #EF5C35;
+    background-color: transparent;
+    border-color: #EF5C35; 
+}
+
+
 
 
 

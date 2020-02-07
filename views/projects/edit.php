@@ -23,16 +23,20 @@ require_once('../elements/nav.php');
 
 <div class="container">
     <div class="row">
+
+    <div class="col-md-2"><!--Leave empty--></div>
+
         <div class="col-md-8">
-            <div class="card mt-4">
-                <div class="card-header">
-                    <h4>Edit Project</h4>
+            <div class="card edit-card my-5">
+                <div class="card-header edit-card-header">
+                    <h4>We all make mistakes! Make your changes here!</h4>
                 </div> <!--end of card-header-->
 
-                <div class="card-body">
+                <div class="card-body edit-card-body">
                     <form method="post" enctype="multipart/form-data">
                     <img id="img-preview" class="w-100" src="<?=$project['file_url']?>">
-                            <div class="form-group custom-file">
+
+                            <div class="form-group custom-file mt-3">
                                 <input class="custom-file-input" id="file-with-preview" type="file" name="fileToUpload" class="form-control">
                                 <label class="custom-file-label">Attach image</label>
                             </div>
@@ -46,13 +50,17 @@ require_once('../elements/nav.php');
                             </div>
 
                             <div class="form-group text-right">
-                                <button type="submit" class="btn btn-outline-warning">Update Project</button>
+                                <button type="submit" class="btn btn-primary edit-btn-hov">Update Project</button>
                             </div>
 
                     </form>
                 </div> <!--End of card body-->
             </div> <!--end of card class-->
         </div>
+
+
+        <div class="col-md-2"><!--Leave empty--></div>
+
     </div>
 </div>
 
